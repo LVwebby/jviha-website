@@ -1,4 +1,4 @@
-# JV Ice Hockey Academy London: jviha.com
+# JV Ice Hockey Academy London: jvhockey.com
 
 A fast static website built with plain HTML, CSS and a little JavaScript. There's no build step, no database and nothing to update or patch. It's hosted free on **GitHub Pages**.
 
@@ -31,10 +31,10 @@ Search the files for `CONFIRM` to find each of these in place.
 - [x] **Brand guide** `JV-Ice-Hockey-Academy_CGP.pdf` stays on the PC only (listed in `.gitignore`, together with `_concepts/` and `_backup-v2/`).
 - [x] **Spond**: every Register / Join button (children and adults) uses `https://club.spond.com/landing/signup/jvicehockey/`.
 - [ ] **Age groups**: confirm U7 birth years, U18 Development eligibility and whether U16 runs in 2026/2027 (`childrens-hockey.html`).
-- [ ] **Enquiry form**: sends to `jv.icehockey.london@gmail.com` through FormSubmit (formsubmit.co, no account needed). The **first** enquiry sends an activation email to that inbox; click **Activate Form** once, then send a test enquiry.
+- [ ] **Enquiry form**: sends to `info@jvhockey.com` through FormSubmit (formsubmit.co, no account needed). The **first** enquiry sends an activation email to that inbox; click **Activate Form** once, then send a test enquiry.
 - [ ] **Policy PDFs**: published from `docs/`. Review the 2025/2026 Terms. Update the Privacy Notice to mention the website, GitHub Pages hosting, the FormSubmit enquiry form and Spond links.
 - [ ] **Safeguarding policy & cancellation policy**: add approved wording to `policies.html`.
-- [ ] **Email**: switch `jv.icehockey.london@gmail.com` to `hello@jviha.com` once it works (search & replace across all files).
+- [x] **Email**: the site uses `info@jvhockey.com` everywhere, including the enquiry form.
 - [ ] **Blog post**: review the equipment post before launch.
 - [ ] **Fonts**: headings use Copperplate Gothic where the visitor's device has it (Macs, iPhones, PCs with Office). Everyone else sees Cinzel, a free look-alike. To always show Copperplate, buy a webfont licence and add the font files (ask Claude to wire it up).
 
@@ -54,10 +54,10 @@ Double-click `index.html` to open it in your browser. Everything except the enqu
 4. Go to **Settings → Pages**. Under *Source* choose **Deploy from a branch**, branch **main**, folder **/ (root)**, then click **Save**.
 5. After about a minute the site is live at `https://YOUR-USERNAME.github.io/jviha-website/`.
 
-### Connect jviha.com
+### Connect jvhockey.com
 
-1. In **Settings → Pages → Custom domain**, type `jviha.com` and click **Save**.
-2. At the company where jviha.com is registered, open the DNS settings and add:
+1. In **Settings → Pages → Custom domain**, type `jvhockey.com` and click **Save**.
+2. At the company where jvhockey.com is registered, open the DNS settings and add:
 
    | Type  | Name  | Value                    |
    |-------|-------|--------------------------|
@@ -69,7 +69,7 @@ Double-click `index.html` to open it in your browser. Everything except the enqu
 
    Remove any other A records for `@`. Don't touch MX records (those are for email).
 3. Wait for DNS to update (from minutes up to 24 hours), then tick **Enforce HTTPS** in Settings → Pages.
-4. Add the site to **Google Search Console** (search.google.com/search-console), verify the domain and submit `https://jviha.com/sitemap.xml`. Also create or claim a **Google Business Profile**, which matters a lot for local searches.
+4. Add the site to **Google Search Console** (search.google.com/search-console), verify the domain and submit `https://jvhockey.com/sitemap.xml`. Also create or claim a **Google Business Profile**, which matters a lot for local searches.
 
 ---
 

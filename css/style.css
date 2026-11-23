@@ -800,5 +800,42 @@ td .small { display: block; font-family: var(--font-body); font-weight: 600; fon
 .post-card.soon p { margin: 0; }
 @media (max-width: 720px) { .post-card.soon { display: none; } }
 
+/* ---------- Home hero: calm static facts band (no motion competing with the video) ---------- */
+ul.facts-band { display: flex; justify-content: center; gap: clamp(22px, 4vw, 64px); list-style: none; margin: 0; padding: 16px 24px; }
+.facts-band li { display: flex; align-items: center; gap: 10px; font-size: .72rem; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: rgba(255,255,255,.7); white-space: nowrap; }
+.facts-band li::before { content: ""; flex: none; width: 14px; height: 14px; border-radius: 50%; border: 1px solid var(--orange); background: radial-gradient(circle, var(--orange) 2px, transparent 2.5px); }
+.facts-band li:nth-child(even)::before { border-color: var(--blue); background: radial-gradient(circle, var(--blue) 2px, transparent 2.5px); }
+.facts-band b { font-family: var(--font-head); font-size: 1rem; letter-spacing: .06em; color: #fff; }
+@media (max-width: 700px) {
+  ul.facts-band { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; padding: 18px 20px; }
+  .facts-band li { display: grid; grid-template-columns: 14px 1fr; column-gap: 10px; row-gap: 3px; white-space: normal; font-size: .6rem; letter-spacing: .14em; }
+  .facts-band li::before { grid-row: span 2; margin-top: 3px; }
+  .facts-band b { display: block; font-size: .95rem; }
+  .hero-copy { padding-bottom: 44px; }
+}
+
+/* ---------- Home: bigger puck in the Why JV corner ---------- */
+.corner-deco.xl { width: 400px; top: -30px; right: 0; }
+@media (max-width: 860px) { .corner-deco.xl { width: 190px; top: 0; right: -20px; } }
+
+/* ---------- Children's: skate starts at the photo's bottom-right corner ---------- */
+.frame-deco.corner-out { left: auto; right: -120px; bottom: -140px; width: 220px; }
+@media (max-width: 860px) { .frame-deco.corner-out { left: auto; right: -14px; bottom: -112px; width: 120px; } }
+
+/* ---------- Children's: training week strip ---------- */
+.week { display: grid; grid-template-columns: repeat(7, 1fr); gap: 8px; list-style: none; padding: 0; margin: 30px 0 26px; }
+.week li { position: relative; display: flex; flex-direction: column; align-items: center; gap: 10px; min-height: 112px; padding: 18px 4px 14px; border: 1px solid #e3e0da; color: #bdb9b1; text-align: center; }
+.week span { font-family: var(--font-head); font-size: 1.05rem; letter-spacing: .06em; text-transform: uppercase; }
+.week li.on { background: var(--black); border-color: var(--black); color: #fff; }
+.week li.on::before { content: ""; position: absolute; left: 0; right: 0; top: 0; height: 4px; background: var(--orange); }
+.week b { font-size: .62rem; line-height: 1.4; letter-spacing: .14em; text-transform: uppercase; color: var(--orange); }
+.week li:nth-child(6)::before { background: var(--blue); }
+.week li:nth-child(6) b { color: var(--blue); }
+@media (max-width: 1180px) {
+  .week { grid-template-columns: repeat(3, 1fr); }
+  .week li:not(.on) { display: none; }
+  .week li { min-height: 96px; }
+}
+
 /* ---------- Footer: faint rink lines, no spinning ---------- */
 .site-footer .lines { width: 1100px; right: -380px; top: -140px; opacity: .12; }

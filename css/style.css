@@ -850,3 +850,17 @@ ul.facts-band { display: flex; justify-content: center; gap: clamp(22px, 4vw, 64
 
 /* ---------- Footer: faint rink lines, no spinning ---------- */
 .site-footer .lines { width: 1100px; right: -380px; top: -140px; opacity: .12; }
+
+/* ---------- FAQ accordion ---------- */
+.faq { border-top: 2px solid var(--black); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding: 20px 0; font-weight: 800; font-size: 1.08rem; line-height: 1.4; color: var(--text); transition: color .2s var(--ease); }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: ""; flex: 0 0 auto; width: 14px; height: 14px; background: linear-gradient(var(--orange), var(--orange)) center / 14px 3px no-repeat, linear-gradient(var(--orange), var(--orange)) center / 3px 14px no-repeat; transition: transform .25s var(--ease); }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item summary:hover { color: var(--orange-dark); }
+.faq-item summary:focus-visible { outline: 2px solid var(--orange); outline-offset: 4px; }
+.faq-a { padding: 0 34px 22px 0; color: var(--muted); }
+.faq-a p { margin: 0; }
+.faq-a a, .section-head .lead a { color: var(--orange-dark); font-weight: 700; }
+@media (max-width: 640px) { .faq-item summary { font-size: 1rem; padding: 17px 0; } .faq-a { padding-right: 0; } }

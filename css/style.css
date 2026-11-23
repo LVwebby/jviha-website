@@ -807,11 +807,14 @@ ul.facts-band { display: flex; justify-content: center; gap: clamp(22px, 4vw, 64
 .facts-band li:nth-child(even)::before { border-color: var(--blue); background: radial-gradient(circle, var(--blue) 2px, transparent 2.5px); }
 .facts-band b { font-family: var(--font-head); font-size: 1rem; letter-spacing: .06em; color: #fff; }
 @media (max-width: 700px) {
-  ul.facts-band { position: relative; display: grid; grid-template-columns: 1fr 1fr; gap: 14px 16px; padding: 18px 20px; }
-  .facts-band li { display: grid; grid-template-columns: 14px 1fr; column-gap: 10px; row-gap: 3px; white-space: normal; font-size: .6rem; letter-spacing: .14em; }
-  .facts-band li::before { grid-row: span 2; margin-top: 3px; }
-  .facts-band b { display: block; font-size: .95rem; }
-  .hero-copy { padding-bottom: 44px; }
+  /* Phones: one light row of four stats over the video, no dark box */
+  ul.facts-band { position: relative; display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; margin: 0 16px; padding: 18px 0 30px; background: transparent; backdrop-filter: none; -webkit-backdrop-filter: none; border-top: 1px solid rgba(255,255,255,.2); }
+  .facts-band::before { width: 60px; }
+  .facts-band li { display: block; padding: 0 4px; text-align: center; white-space: normal; font-size: .5rem; line-height: 1.5; letter-spacing: .12em; color: rgba(255,255,255,.65); border-left: 1px solid rgba(255,255,255,.15); }
+  .facts-band li:first-child { border-left: 0; }
+  .facts-band li::before { display: none; }
+  .facts-band b { display: block; margin-bottom: 4px; font-size: .8rem; letter-spacing: .02em; white-space: nowrap; }
+  .hero-copy { padding-bottom: 36px; }
 }
 
 /* ---------- Home: bigger puck in the Why JV corner ---------- */

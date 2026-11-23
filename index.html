@@ -25,20 +25,39 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "SportsOrganization",
-    "name": "JV Ice Hockey Academy London",
-    "legalName": "JV Ice Hockey Academy Ltd",
-    "url": "https://jvhockey.com/",
-    "logo": "https://jvhockey.com/images/logo-crest.png",
-    "foundingDate": "2014",
-    "sport": "Ice hockey",
-    "email": "info@jvhockey.com",
-    "founder": { "@type": "Person", "name": "Vid Jazbec" },
-    "location": {
-      "@type": "Place",
-      "name": "Queens Ice Rink",
-      "address": { "@type": "PostalAddress", "streetAddress": "17 Queensway", "addressLocality": "London", "postalCode": "W2 4QP", "addressCountry": "GB" }
-    }
+    "@graph": [
+      {
+        "@type": "SportsOrganization",
+        "@id": "https://jvhockey.com/#organization",
+        "name": "JV Ice Hockey Academy London",
+        "alternateName": ["JV Hockey", "JV Ice Hockey Academy"],
+        "legalName": "JV Ice Hockey Academy Ltd",
+        "description": "Ice hockey academy at Queens Ice Rink, Bayswater, London. Structured coaching for children (U7 to U18) and adults (beginners on Tuesdays, intermediate and advanced on Fridays), plus camps and clinics. Founded in 2014.",
+        "url": "https://jvhockey.com/",
+        "logo": "https://jvhockey.com/images/logo-crest.png",
+        "image": "https://jvhockey.com/images/og-image.jpg",
+        "foundingDate": "2014",
+        "sport": "Ice hockey",
+        "email": "info@jvhockey.com",
+        "founder": { "@type": "Person", "name": "Vid Jazbec" },
+        "areaServed": { "@type": "City", "name": "London" },
+        "address": { "@type": "PostalAddress", "streetAddress": "17 Queensway", "addressLocality": "London", "postalCode": "W2 4QP", "addressCountry": "GB" },
+        "location": {
+          "@type": "SportsActivityLocation",
+          "name": "Queens Ice Rink",
+          "address": { "@type": "PostalAddress", "streetAddress": "17 Queensway", "addressLocality": "London", "postalCode": "W2 4QP", "addressCountry": "GB" }
+        },
+        "knowsAbout": ["Ice hockey coaching", "Children's ice hockey", "Adult ice hockey", "Learn to skate"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://jvhockey.com/#website",
+        "url": "https://jvhockey.com/",
+        "name": "JV Ice Hockey Academy London",
+        "inLanguage": "en-GB",
+        "publisher": { "@id": "https://jvhockey.com/#organization" }
+      }
+    ]
   }
   </script>
 </head>

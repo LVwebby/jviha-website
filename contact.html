@@ -71,12 +71,12 @@
           <h2>Send an enquiry</h2>
           <p class="muted">Please don't include medical or other sensitive information here. That's collected securely through Spond during registration.</p>
 
-          <!-- FORM: enquiries are emailed to the academy address via FormSubmit (formsubmit.co).
-               The very first enquiry triggers an activation email to that inbox; click "Activate" in it once.
-               To change the address later, edit the email at the end of the action URL below. -->
-          <form id="enquiry-form" class="form" action="https://formsubmit.co/ajax/info@jvhockey.com" method="POST" novalidate>
-            <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_captcha" value="false">
+          <!-- FORM: enquiries are emailed to info@jvhockey.com via Web3Forms (web3forms.com).
+               The access key below belongs to that address; to send to a different inbox,
+               create a new key at web3forms.com and replace it. -->
+          <form id="enquiry-form" class="form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+            <input type="hidden" name="access_key" value="d7b2c4de-6280-4a67-bf3f-5be8410acf25">
+            <input type="hidden" name="from_name" value="jvhockey.com website">
             <label class="hp">Leave this empty <input type="checkbox" name="botcheck" tabindex="-1" autocomplete="off"></label>
 
             <div class="field">

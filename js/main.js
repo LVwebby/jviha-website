@@ -118,7 +118,7 @@
     requestAnimationFrame(frame);
   }
 
-  // Enquiry form (FormSubmit, emails the academy inbox)
+  // Enquiry form (Web3Forms, emails info@jvhockey.com)
   var form = document.getElementById("enquiry-form");
   if (form) {
     // Pre-select the enquiry type from links like contact.html?type=adult
@@ -145,8 +145,7 @@
       var data = new FormData(form);
       data.delete("botcheck");
       var type = data.get("enquiry_type") || "General";
-      data.set("_subject", "Website enquiry: " + type);
-      if (data.get("email")) data.set("_replyto", data.get("email"));
+      data.set("subject", "Website enquiry: " + type);
 
       button.disabled = true;
       var label = button.textContent;

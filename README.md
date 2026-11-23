@@ -31,8 +31,8 @@ Search the files for `CONFIRM` to find each of these in place.
 - [x] **Brand guide** `JV-Ice-Hockey-Academy_CGP.pdf` stays on the PC only (listed in `.gitignore`, together with `_concepts/` and `_backup-v2/`).
 - [x] **Spond**: every Register / Join button (children and adults) uses `https://club.spond.com/landing/signup/jvicehockey/`.
 - [ ] **Age groups**: confirm U7 birth years, U18 Development eligibility and whether U16 runs in 2026/2027 (`childrens-hockey.html`).
-- [ ] **Enquiry form**: sends to `info@jvhockey.com` through FormSubmit (formsubmit.co, no account needed). The **first** enquiry sends an activation email to that inbox; click **Activate Form** once, then send a test enquiry.
-- [ ] **Policy PDFs**: published from `docs/`. Review the 2025/2026 Terms. Update the Privacy Notice to mention the website, GitHub Pages hosting, the FormSubmit enquiry form and Spond links.
+- [x] **Enquiry form**: sends to `info@jvhockey.com` through Web3Forms (web3forms.com). The access key is in `contact.html`; to change the inbox, create a new key at web3forms.com and replace it.
+- [ ] **Policy PDFs**: published from `docs/`. Review the 2025/2026 Terms. Update the Privacy Notice to mention the website, GitHub Pages hosting, the Web3Forms enquiry form and Spond links.
 - [ ] **Safeguarding policy & cancellation policy**: add approved wording to `policies.html`.
 - [x] **Email**: the site uses `info@jvhockey.com` everywhere, including the enquiry form.
 - [ ] **Blog post**: review the equipment post before launch.

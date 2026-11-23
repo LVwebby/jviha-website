@@ -840,5 +840,13 @@ ul.facts-band { display: flex; justify-content: center; gap: clamp(22px, 4vw, 64
   .week li { min-height: 96px; }
 }
 
+/* ---------- Policies: written policy text ---------- */
+.policy-text { margin-top: 16px; }
+.policy-text h3 { font-size: 1.2rem; margin-bottom: 12px; }
+.policy-text ul { list-style: none; padding: 0; margin: 0 0 18px; }
+.policy-text li { position: relative; padding: 9px 0 9px 26px; border-bottom: 1px solid var(--line); }
+.policy-text li::before { content: ""; position: absolute; left: 2px; top: 17px; width: 9px; height: 9px; background: var(--orange); transform: skewX(-20deg); }
+.policy-text a { color: var(--orange-dark); font-weight: 700; }
+
 /* ---------- Footer: faint rink lines, no spinning ---------- */
 .site-footer .lines { width: 1100px; right: -380px; top: -140px; opacity: .12; }

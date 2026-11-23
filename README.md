@@ -32,10 +32,11 @@ Search the files for `CONFIRM` to find each of these in place.
 - [x] **Spond**: every Register / Join button (children and adults) uses `https://club.spond.com/landing/signup/jvicehockey/`.
 - [ ] **Age groups**: confirm U7 birth years, U18 Development eligibility and whether U16 runs in 2026/2027 (`childrens-hockey.html`).
 - [x] **Enquiry form**: sends to `info@jvhockey.com` through Web3Forms (web3forms.com). The access key is in `contact.html`; to change the inbox, create a new key at web3forms.com and replace it.
-- [ ] **Policy PDFs**: published from `docs/`. Review the 2025/2026 Terms. Update the Privacy Notice to mention the website, GitHub Pages hosting, the Web3Forms enquiry form and Spond links.
-- [ ] **Safeguarding policy & cancellation policy**: add approved wording to `policies.html`.
+- [x] **Safeguarding & cancellation wording** is on the Policies page (taken from the Code of Conduct and section 4 of the Terms).
 - [x] **Email**: the site uses `info@jvhockey.com` everywhere, including the enquiry form.
 - [ ] **Blog post**: review the equipment post before launch.
+- [ ] **Google (optional)**: add `https://jvhockey.com/sitemap.xml` in Google Search Console (search.google.com/search-console), and set up a Google Business Profile for local searches.
+- [ ] **Policy PDFs**: the PDFs still show the old email (jv.icehockey.london@gmail.com) and website (jvhockeyacademy.com). Update them to info@jvhockey.com and jvhockey.com, and add the website and Web3Forms enquiry form to the Privacy Notice (the Policies page already has a "This website and the enquiry form" section). A full safeguarding policy with a reporting procedure can be added later.
 - [ ] **Fonts**: headings use Copperplate Gothic where the visitor's device has it (Macs, iPhones, PCs with Office). Everyone else sees Cinzel, a free look-alike. To always show Copperplate, buy a webfont licence and add the font files (ask Claude to wire it up).
 
 ---
